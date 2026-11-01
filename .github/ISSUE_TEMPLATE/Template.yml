@@ -1,0 +1,42 @@
+name: 🐛 Bug Report or 💡 Feature Request
+description: Report a broken command/bug or request a new feature for Aero Admin.
+title: "[Issue/Feature]: "
+body:
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue Type
+      description: Is this a bug fix report or a new feature request?
+      options:
+        - Bug Fix
+        - Feature Request
+    validations:
+      required: true
+
+  - type: input
+    id: issue_title
+    attributes:
+      label: Title
+      description: Provide a concise title for this report or request.
+      placeholder: "e.g., ;talk command UI alignment issue or New ;poll command"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem_or_feature
+    attributes:
+      label: What's the problem? (or Feature Description)
+      description: If this is a bug, explain what is broken. If this is a feature request, describe what you would like added!
+      placeholder: "Describe the bug or feature details here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: replication_steps
+    attributes:
+      label: How can we replicate the bug?
+      description: If reporting a bug, list the exact steps to reproduce it (leave blank if this is a feature request).
+      placeholder: |
+        eg. 1. Ban Lola 2. Lola will get kicked out instead.
+    validations:
+      required: false
