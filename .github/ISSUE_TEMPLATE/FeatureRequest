@@ -1,0 +1,22 @@
+name: 💡 Feature Request
+description: Suggest a new command, utility, or improvement for Aero Admin.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: feature_title
+    attributes:
+      label: Title
+      description: Provide a concise title for your feature request.
+      placeholder: "e.g., Add a new ;poll command"
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: What is the feature you would like to see added?
+      description: Describe the core concept, client UI requirements, or parameters.
+      placeholder: "Explain what command or feature you want and how it should work in detail..."
+    validations:
+      required: true
