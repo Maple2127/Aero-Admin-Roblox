@@ -1,0 +1,32 @@
+name: 🐛 Bug Report
+description: Report a broken command, system error, or unexpected behavior in Aero Admin.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: bug_title
+    attributes:
+      label: Title
+      description: Provide a concise title summarizing the bug.
+      placeholder: "e.g., ;talk command UI alignment issue"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem_description
+    attributes:
+      label: What's the problem?
+      description: Explain what is broken or not working as expected.
+      placeholder: "Describe what went wrong and what you expected to happen instead..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: replication_steps
+    attributes:
+      label: How can we replicate the bug?
+      description: List the step-by-step instructions to reproduce the issue.
+      placeholder: |
+        eg. 1. Ban Lola 2. Lola will get kicked out instead.
+    validations:
+      required: true
